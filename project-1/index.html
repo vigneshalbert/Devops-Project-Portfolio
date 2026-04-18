@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project 1 - DevOps CI/CD Pipeline</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #38bdf8;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #334155;
+}
+
+a {
+    color: #38bdf8;
+}
+
+.github-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    background: #0ea5e9;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 DevOps End-to-End CI/CD Project</h1>
+    <p>AWS | Docker | CI/CD | Monitoring</p>
+    <a href="../index.html" class="back-btn">← Back to Portfolio</a>
+</header>
+
+<div class="container">
+
+    <!-- OVERVIEW -->
+    <div class="section">
+        <h2>📌 Project Overview</h2>
+        <p>
+            This project demonstrates a complete end-to-end DevOps pipeline including 
+            CI/CD automation, containerization using Docker, deployment on AWS EC2, 
+            reverse proxy configuration using Nginx, and real-time monitoring using 
+            Prometheus and Grafana.
+        </p>
+    </div>
+
+    <!-- TECH STACK -->
+    <div class="section">
+        <h2>⚙️ Tech Stack</h2>
+
+        <span class="badge">AWS EC2</span>
+        <span class="badge">Docker</span>
+        <span class="badge">Nginx</span>
+        <span class="badge">GitHub Actions</span>
+        <span class="badge">Jenkins</span>
+        <span class="badge">Linux</span>
+        <span class="badge">Prometheus</span>
+        <span class="badge">Grafana</span>
+    </div>
+
+    <!-- ARCHITECTURE -->
+    <div class="section">
+        <h2>🏗️ Architecture Flow</h2>
+
+        <pre>
+GitHub Repository
+        ↓
+CI/CD Pipeline (GitHub Actions / Jenkins)
+        ↓
+AWS EC2 Instance
+        ↓
+Docker Container
+        ↓
+Nginx Reverse Proxy
+        ↓
+Live Application (Domain + HTTPS)
+
+Monitoring:
+Node Exporter → Prometheus → Grafana
+        </pre>
+    </div>
+
+    <!-- LIVE LINKS -->
+    <div class="section">
+        <h2>🌐 Live Links</h2>
+
+        <p>Prometheus: 
+        <a href="http://13.205.142.11:9090" target="_blank">
+        http://13.205.142.11:9090</a></p>
+
+        <p>Grafana: 
+        <a href="http://13.205.142.11:3000" target="_blank">
+        http://13.205.142.11:3000</a></p>
+
+        <p>
+    <a href="https://github.com/vigneshalbert/Devops-Project-01.git" target="_blank" class="github-btn">
+        🔗 View Source Code on GitHub
+    </a>
+</p>
+
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <div class="section">
+        <h2>📸 Screenshots</h2>
+
+        <h3>Grafana Dashboard</h3>
+        <img src="../assets/screenshots/grafana.png">
+
+        <h3>Prometheus Targets</h3>
+        <img src="../assets/screenshots/promethus.png">
+
+        <h3>Nginx Deployment</h3>
+        <img src="../assets/screenshots/nginx.png">
+
+        <h3>AWS EC2 Setup</h3>
+        <img src="../assets/screenshots/ec2.png">
+    </div>
+
+    <!-- LEARNINGS -->
+    <div class="section">
+        <h2>🧠 Key Learnings</h2>
+        <ul>
+            <li>End-to-end CI/CD pipeline implementation</li>
+            <li>Docker-based application deployment</li>
+            <li>Reverse proxy configuration using Nginx</li>
+            <li>Cloud deployment on AWS EC2</li>
+            <li>Monitoring setup using Prometheus & Grafana</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

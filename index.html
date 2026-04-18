@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #020617;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5f5;
+            margin-left: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+    text-align: center;
+    padding: 60px 20px 20px; /* reduced bottom space */
+}
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: #38bdf8;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #0ea5e9;
+        }
+
+        .projects {
+            padding: 50px;
+        }
+
+        .projects h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #cbd5f5;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px){
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+
+    .skills {
+    padding: 20px 50px 50px; /* less top space */
+    text-align: center;
+}
+
+
+.skills h2 {
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vignesh – Aspiring DevOps Engineer</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <h2>DevOps Projects Portfolio</h2>
+
+    <p>
+        Application Engineer transitioning into DevOps with hands-on experience 
+        in AWS, Docker, CI/CD pipelines, and Linux-based deployments.
+    </p>
+
+    <p style="max-width: 700px; margin: 10px auto; color: #cbd5f5;">
+        Passionate about building scalable and automated infrastructure solutions. 
+        Currently strengthening skills in cloud computing, containerization, and 
+        continuous integration/continuous deployment. Actively seeking opportunities 
+        to contribute, learn, and grow as a DevOps Engineer.
+    </p>
+
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+        View Projects
+    </button>
+</section>
+
+<section class="skills">
+    <h2>Domain Expertise & Tech Stack</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Networking & CCNA</h3>
+            <p>Strong understanding of networking fundamentals including TCP/IP, routing, switching, subnetting, and troubleshooting.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>AWS Cloud</h3>
+            <p>Hands-on experience with EC2, S3, IAM, VPC, and deploying applications on cloud infrastructure.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>DevOps Tools</h3>
+            <p>Experience with Docker, GitHub Actions, CI/CD pipelines, and NGINX for application deployment.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Linux Administration</h3>
+            <p>Comfortable with Linux commands, server setup, package management, and troubleshooting system issues.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Basic scripting for automation, file handling, and improving DevOps workflows.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>HTML & UI Basics</h3>
+            <p>Building simple and responsive UI pages for portfolio and deployment projects.</p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="card-container">
+
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="assets/screenshots/project1.png" alt="Project 2">
+                <h3>CI/CD Pipeline</h3>
+                <p>Automated pipeline using GitHub Actions for deployment.</p>
+                <a href="./project-1/index.html">View Details →</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="assets/screenshots/project2.png" alt="Project 1">
+                <h3>Docker Deployment</h3>
+                <p>Containerized application deployed using Docker and NGINX.</p>
+                <a href="./project-2/index.html">View Details →</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="assets/screenshots/project3.png" alt="Project 3">
+                <h3>AWS Deployment</h3>
+                <p>Hosted application on AWS EC2 with NGINX setup.</p>
+                <a href="./project-3/index.html">View Details →</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card">
+                <img src="assets/screenshots/project4.png" alt="Project 4">
+                <h3>Monitoring</h3>
+                <p>Monitoring setup using Prometheus and Grafana.</p>
+                <a href="./project-4/index.html">View Details →</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="card">
+                <img src="assets/screenshots/project5.png" alt="Project 5">
+                <h3>Full DevOps</h3>
+                <p>End-to-end DevOps pipeline with CI/CD, Docker & AWS.</p>
+                <a href="./project-5/index.html">View Details →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vignesh | DevOps Portfolio</p>
+    </footer>
+
+</body>
+</html>
